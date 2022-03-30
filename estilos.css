@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-.container {
-    font-family: 'Roboto', sans-serif;
-    background-color: #e5e5e5;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 @media (max-width: 767px){
 
+    * {
+        box-sizing: border-box;
+    }
+    
+    .container {
+        font-family: 'Roboto';
+        background-color: #e5e5e5;
+    }
+    
     .header{
         height: 92px;
         width: 100%;
@@ -32,6 +37,39 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
+    }
+
+    .footer{
+        height: 92px;
+        width: 100%;
+        background-color: #ffffff;
+
+        position: fixed;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botao-fechar-pedido{
+        border-radius: 50px;
+        height: 61px;
+        width: 364px;
+        background-color: #cbcbcb;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botao-fechar-pedido p{
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
     }
 
 }
