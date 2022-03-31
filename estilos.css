@@ -84,6 +84,8 @@
 
         display: flex;
         justify-content: center;
+
+        position: relative;
     }
 
     .opcao > div{
@@ -96,7 +98,6 @@
         width: 100%;
     }
 
-    
 
     .opcao h1{
         font-weight: 700;
@@ -126,12 +127,12 @@
 
     .opcao img:last-child{
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 8px;
+        right: 6px;
 
         width: 16px;
 
-        display: initial;
+        display: none;
     }
 
     .footer{
@@ -161,12 +162,28 @@
         justify-content: center;
     }
 
-    .botao-fechar-pedido p{
+    .botao-fechar-pedido p:first-child{
         color: #ffffff;
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;
         text-align: center;
+
+        display: initial;
+    }
+
+    .botao-selecionado{
+        background-color: #32B72F;
+    }
+
+    .botao-fechar-pedido p:last-child{
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+
+        display: none;
     }
 
 }
