@@ -26,7 +26,7 @@ function selecionaOpcao(elementoClicado, classePrato){
     }
 
     if(PratoSelecionado && BebidaSelecionada && SobremesaSelecionada){
-        fecharPedido();
+        mudarBotao();
     }
 }
 
@@ -39,7 +39,7 @@ function removeCheck(selecionadoAnterior){
     }    
 }
 
-function fecharPedido(){
+function mudarBotao(){
 
     let esconderBotao = document.querySelector(".botao-selecione3");
     let mostrarBotao = document.querySelector(".botao-fechar-pedido");
@@ -47,3 +47,20 @@ function fecharPedido(){
     mostrarBotao.classList.remove("escondido");
 }
 
+function fecharPedido(){
+
+    let modal = document.querySelector(".modalFecharPedido");
+    let fundo = document.querySelector(".fundo-transparente")
+
+    modal.classList.remove("escondido");
+    fundo.classList.remove("escondido")
+}
+
+function cancelaPedido(){
+
+    let modal = document.querySelector(".modalFecharPedido");
+    let fundo = document.querySelector(".fundo-transparente")
+
+    modal.classList.add("escondido");
+    fundo.classList.add("escondido")
+}

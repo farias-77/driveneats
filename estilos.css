@@ -86,6 +86,7 @@
         justify-content: center;
 
         position: relative;
+        cursor: pointer;
     }
 
     .opcao > div{
@@ -97,7 +98,6 @@
     .opcao img:first-child{
         width: 100%;
     }
-
 
     .opcao h1{
         font-weight: 700;
@@ -158,6 +158,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        border: none;
     }
 
     .botao-selecione3 p{
@@ -176,12 +178,88 @@
         text-align: center;
     }
 
+    .modalFecharPedido{
+        width: 90%;
+        height: 353px;
+
+        background-color: #50d074;
+        border-radius: 9px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+
+        position: fixed;
+        top: 230px;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        z-index: 3;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .modalFecharPedido > div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .modalFecharPedido p{
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .modalFecharPedido > p:first-child, .valorTotal p{
+        font-weight: 700;
+    }
+
+    .modalFecharPedido > p:first-child{
+        margin-left: 50px;
+    }
+
+    .botaoPedir{
+        height: 50px;
+        width: 100%;
+        
+        background-color: #ffffff;
+        border-radius: 100px;
+    }
+
+    .botaoPedir p{
+        color: #50D074;
+        font-size: 22px;
+        font-weight: 700;
+
+        margin-top: 12px;
+        margin-left: 40px;
+    }
+
+    .botaoCancelar p{
+        font-weight: 700;
+        margin-left: 110px;
+    }
+
+    .fundo-transparente{
+        height: 100%;
+        width: 100%;
+        
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 2;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
     .escondido{
         display: none;
     }
 
-    .verde{
+    .botao-verde{
         background-color: #32B72F;
+        cursor: pointer;
     }
 
 }
