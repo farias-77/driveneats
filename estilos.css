@@ -131,8 +131,6 @@
         right: 6px;
 
         width: 16px;
-
-        display: none;
     }
 
     .footer{
@@ -151,7 +149,7 @@
         z-index: 1;
     }
 
-    .botao-fechar-pedido{
+    .botao-fechar-pedido, .botao-selecione3{
         border-radius: 50px;
         height: 61px;
         width: 364px;
@@ -162,28 +160,28 @@
         justify-content: center;
     }
 
-    .botao-fechar-pedido p:first-child{
+    .botao-selecione3 p{
         color: #ffffff;
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;
         text-align: center;
+    } 
 
-        display: initial;
-    }
-
-    .botao-selecionado{
-        background-color: #32B72F;
-    }
-
-    .botao-fechar-pedido p:last-child{
+    .botao-fechar-pedido p{
         color: #ffffff;
         font-weight: 700;
         font-size: 20px;
         line-height: 23px;
         text-align: center;
+    }
 
+    .escondido{
         display: none;
+    }
+
+    .verde{
+        background-color: #32B72F;
     }
 
 }
