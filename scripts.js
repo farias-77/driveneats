@@ -78,6 +78,17 @@ function cancelaPedido(){
     fundo.classList.add("escondido")
 }
 
+function realizarPedido(){
+    let modal = document.querySelector(".modalFecharPedido");
+    let nomePrato = modal.querySelector(".pratoFinal p:first-child").innerHTML;
+    let nomeBebida = modal.querySelector(".bebidaFinal p:first-child").innerHTML;
+    let nomeSobremesa = modal.querySelector(".sobremesaFinal p:first-child").innerHTML;
+    let valorPedido = modal.querySelector(".valorTotal p:last-child").innerHTML;
+    
+    let minhaMensagem = `Olá, gostaria de fazer o pedido:\n- Prato: ${nomePrato}\n- Bebida: ${nomeBebida}\n- Sobremesa: ${nomeSobremesa}\nTotal: ${valorPedido}`;
+    let win = window.open(`https://wa.me/553287047539?text=${encodeURI(minhaMensagem)}`)
+}
+
 function somaDosValores(valorPrato, valorBebida, valorSobremesa){
 
     valorPrato = retornaComPonto(valorPrato);
